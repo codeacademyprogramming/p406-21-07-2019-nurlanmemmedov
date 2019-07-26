@@ -1,0 +1,105 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+
+
+}
+#candidate{
+    background-color: #f8f9fa;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.img-area img{
+    width: 100px;
+    border-radius: 100%;
+
+}
+.wrapper{
+    width: 1140px;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.slides{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 1140px;
+    box-shadow: 0 0 20px -15px black;
+    height: 424px;
+}
+.slide-inside{
+    text-align: center;
+    width: 537px;
+}
+.inner{
+    display: flex;
+    position: absolute;
+    left: -537px;
+    cursor: pointer;
+}
+.slides .content .letter{
+    font-size: 20.8px;
+    line-height: 1.7;
+    text-align: center;
+    
+    color: #7F848C;
+}
+.slides .content{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.arrow img{
+    width: 30px;
+    
+}
+.arrow{
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 1s ease 0s;
+    opacity: 1;
+   
+
+
+}
+.arrows{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translate3d(-50%,-50%,0);
+    top: 50%;
+    left: 50%;
+}
+.square-area {
+    position: absolute;
+    bottom: 50px;
+    margin-top: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: space-around;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+}
+.square{
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+    background-color: grey;
+    cursor: pointer;
+    
+}
+.square.active{
+    background-color: blue;
+}
